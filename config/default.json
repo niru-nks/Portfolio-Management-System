@@ -1,0 +1,6 @@
+{
+  "app-name": "Portfolio",
+  "db": {
+    "url": "mongodb+srv://nks:nks123456@cluster0.bn2wr.mongodb.net/Portfolio?retryWrites=true&w=majority"
+  }
+}
