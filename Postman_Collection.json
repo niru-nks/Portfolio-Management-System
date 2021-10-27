@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "b90800da-9ed7-43b4-9d3f-9b02f986db9e",
+		"name": "Portfolio Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Trade",
+			"item": [
+				{
+					"name": "Get trades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/trade/get",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trade",
+								"get"
+							]
+						},
+						"description": "localhost:3000/api/trade/get"
+					},
+					"response": []
+				},
+				{
+					"name": "Add trades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"symbol\": \"TCS\", \n    \"price\": 50, \n    \"shares\": 5, \n    \"type\": \"BUY\" \n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/trade/add",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trade",
+								"add"
+							]
+						},
+						"description": "localhost:3000/api/trade/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete trades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"61786bdbb38fe4fd8b555eee\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/trade/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trade",
+								"delete"
+							]
+						},
+						"description": "localhost:3000/api/trade/delete"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Trades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"id\": \"617870e40fc047f7a0ec7d01\",\n    \"price\": 900, \n    \"shares\": 5\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/trade/update",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"trade",
+								"update"
+							]
+						},
+						"description": "localhost:3000/api/trade/update"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Get returns",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/portfolio/getReturns",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio",
+								"getReturns"
+							]
+						},
+						"description": "localhost:3000/api/portfolio/getReturns"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Portfolio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/portfolio/getPortfolio",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio",
+								"getPortfolio"
+							]
+						},
+						"description": "localhost:3000/api/portfolio/getPortfolio"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
